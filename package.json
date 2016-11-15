@@ -3,6 +3,7 @@
   "version": "0.0.1",
   "description": "Keeping obvious values secure.",
   "main": "siphr.js",
+  "repository": "davidpaulhunt/siphr",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
