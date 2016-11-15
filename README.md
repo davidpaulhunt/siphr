@@ -3,12 +3,16 @@ siphr
 
 Simple interface to encrypt/decrypt a single value or the keys and values of a plain object.
 
-Siphr uses the secret you provide to encrypt values as base64 strings.
+Siphr uses the secret you provide to encrypt (AES256) values as base64 strings.
 
 Possible use cases:
 * passwords
 * web tokens
 * application level encryption before persisting to database
+
+##### Add-ons
+
+You can use [jstrong](https://github.com/davidpaulhunt/jstrong) to send complete json objects with both its keys and values encrypted.
 
 ### Installation
 
