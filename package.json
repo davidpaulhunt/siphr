@@ -1,12 +1,20 @@
 {
   "name": "siphr",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "Keeping obvious values secure.",
   "main": "siphr.js",
   "repository": "davidpaulhunt/siphr",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
+  "keywords": [
+    "encryption",
+    "security",
+    "passwords",
+    "aes256",
+    "cipher",
+    "crypto"
+  ],
   "author": "David Hunt <davidpaulhunt@gmail.com>",
   "license": "ISC"
 }
