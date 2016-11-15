@@ -26,3 +26,8 @@ const str = siphr.mask('some private information'); // => sFHg6oX9AMI7ejBsw==
 
 const cleanStr = siphr.unmask(str); // => 'some private information'
 ```
+
+### Tests
+```
+$ npm test
+```

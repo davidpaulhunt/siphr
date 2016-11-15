@@ -12,5 +12,5 @@ const obj = { foo: 'bar', count: 5 };
 const encryptedObj = siphr.mask(obj);
 const unencryptedObj = siphr.unmask(encryptedObj);
 
-assert.notEqual(encryptedObj, obj);
+assert.notDeepEqual(encryptedObj, obj);
 assert.deepEqual(unencryptedObj, obj);
