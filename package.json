@@ -5,7 +5,7 @@
   "main": "siphr.js",
   "repository": "davidpaulhunt/siphr",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "node test"
   },
   "keywords": [
     "encryption",

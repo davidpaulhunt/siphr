@@ -13,13 +13,13 @@ module.exports = (secret) => {
       const target = {};
       for (const key in source) {
         if (source.hasOwnProperty(key)) {
-          target[_mask(key)] = _mask(source[key]);
+          target[mask(key)] = mask(source[key]);
         }
       }
       return target;
     },
 
-    unmask: unmask(source) {
+    unmask: function unmask(source) {
       if (Object.prototype.toString.call(source) !== '[object Object]') {
         const decipher = crypto.createDecipher('aes256', secret);
         decipher.update(source, 'base64', 'utf8');
@@ -34,7 +34,7 @@ module.exports = (secret) => {
       const target = {};
       for (const key in source) {
         if (source.hasOwnProperty(key)) {
-          target[_unmask(key)] = _unmask(source[key]);
+          target[unmask(key)] = unmask(source[key]);
         }
       }
       return target;
